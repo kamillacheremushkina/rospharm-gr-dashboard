@@ -48,7 +48,7 @@ export default function AppLayout() {
         </div>
 
         <div className="p-6 border-b border-slate-200">
-          <h1 className="text-xl font-bold text-slate-900">ROSPHARM GR</h1>
+          <h1 className="text-xl font-bold text-slate-900">ROSPHARM</h1>
           <p className="text-sm text-slate-500 mt-1">Dashboard</p>
           <p className="text-xs text-slate-400 mt-2">
             Biopharma Localization Project
