@@ -25,7 +25,7 @@ export default function AppLayout() {
         </button>
 
         <h1 className="text-sm font-semibold text-slate-800">
-          ROSPHARM GR
+          ROSPHARM
         </h1>
 
         <div />
@@ -33,7 +33,7 @@ export default function AppLayout() {
 
       {/* SIDEBAR */}
       <div
-        className={`fixed md:static top-0 left-0 h-full w-full md:w-64 bg-white border-r border-slate-200 flex flex-col z-40 transform transition-transform duration-300 ${
+        className={`fixed md:sticky md:top-0 top-0 left-0 h-full md:h-screen w-full md:w-64 bg-white border-r border-slate-200 flex flex-col z-40 transform transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         }`}
       >
@@ -47,14 +47,22 @@ export default function AppLayout() {
           </button>
         </div>
 
+        {/* LOGO BLOCK */}
         <div className="p-6 border-b border-slate-200">
-          <h1 className="text-xl font-bold text-slate-900">ROSPHARM GR</h1>
-          <p className="text-sm text-slate-500 mt-1">Dashboard</p>
+          <h1 className="text-xl font-bold text-slate-900">
+            ROSPHARM
+          </h1>
+
+          <p className="text-sm text-slate-500 mt-1">
+            GR monitoring
+          </p>
+
           <p className="text-xs text-slate-400 mt-2">
             Biopharma Localization Project
           </p>
         </div>
 
+        {/* NAVIGATION */}
         <nav className="flex-1 p-4 space-y-1">
           <NavLink
             to="/overview"
@@ -62,7 +70,7 @@ export default function AppLayout() {
             onClick={() => setMenuOpen(false)}
           >
             <LayoutDashboard className="w-5 h-5 mr-3" />
-            Обзор
+            Основные показатели
           </NavLink>
 
           <NavLink
@@ -71,7 +79,7 @@ export default function AppLayout() {
             onClick={() => setMenuOpen(false)}
           >
             <Target className="w-5 h-5 mr-3" />
-            Цели и KPI
+            Цели
           </NavLink>
 
           <NavLink
@@ -91,6 +99,7 @@ export default function AppLayout() {
           <Outlet />
         </div>
       </div>
+
     </div>
   );
 }
