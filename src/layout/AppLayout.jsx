@@ -37,7 +37,7 @@ export default function AppLayout() {
           menuOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         }`}
       >
-        {/* CLOSE BUTTON (mobile) */}
+        {/* CLOSE BUTTON */}
         <div className="md:hidden flex justify-end p-4">
           <button
             onClick={() => setMenuOpen(false)}
@@ -85,12 +85,13 @@ export default function AppLayout() {
         </nav>
       </div>
 
-      {/* PAGE CONTENT */}
+      {/* CONTENT */}
       <div className="flex-1 overflow-auto pt-16 md:pt-0 p-4 md:p-8">
         <div className="max-w-6xl mx-auto">
           <Outlet />
         </div>
       </div>
+
     </div>
   );
 }
