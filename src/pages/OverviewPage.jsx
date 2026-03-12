@@ -62,7 +62,7 @@ export default function OverviewPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-slate-900">GR Dashboard</h1>
+        <h1 className="text-2xl font-bold text-slate-900">Основные показатели</h1>
         <div className="flex items-center mt-2 text-sm text-slate-500">
           <Calendar className="w-4 h-4 mr-2" />
           <span>Обновлено: 12.03.2026</span>

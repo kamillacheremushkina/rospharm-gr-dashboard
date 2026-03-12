@@ -219,7 +219,7 @@ export default function GoalsPage() {
   return (
     <div className="space-y-6 pb-12">
       <div>
-        <h1 className="text-2xl font-bold text-slate-900">Цели и KPI</h1>
+        <h1 className="text-2xl font-bold text-slate-900">Цели</h1>
         <p className="text-slate-600 mt-1">Квартальные цели и показатели выполнения</p>
         <div className="flex items-center mt-3 text-sm text-slate-500">
           <Calendar className="w-4 h-4 mr-2" />

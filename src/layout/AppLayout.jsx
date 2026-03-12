@@ -25,7 +25,7 @@ export default function AppLayout() {
         </button>
 
         <h1 className="text-sm font-semibold text-slate-800">
-          ROSPHARM GR
+          ROSPHARM
         </h1>
 
         <div />
@@ -62,7 +62,7 @@ export default function AppLayout() {
             onClick={() => setMenuOpen(false)}
           >
             <LayoutDashboard className="w-5 h-5 mr-3" />
-            Обзор
+            Основные показатели
           </NavLink>
 
           <NavLink
@@ -71,7 +71,7 @@ export default function AppLayout() {
             onClick={() => setMenuOpen(false)}
           >
             <Target className="w-5 h-5 mr-3" />
-            Цели и KPI
+            Цели
           </NavLink>
 
           <NavLink
